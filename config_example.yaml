@@ -20,3 +20,5 @@ hydra:
   run:
     dir: ./
   output_subdir: null # if hydra>=1.0.0 else ./
+  job_logging: null
+  hydra_logging: null

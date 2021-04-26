@@ -1,1 +1,1 @@
-hydra_core>=1.0.0rc
+hydra_core

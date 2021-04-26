@@ -1,5 +1,6 @@
 import hydra
 from omegaconf import DictConfig
+from omegaconf import OmegaConf
 
 
 @hydra.main(config_name="config_example.yaml")
@@ -9,7 +10,7 @@ def my_app(cfg: DictConfig) -> None:
     :param cfg:
     :return:
     """
-    print(cfg.pretty())
+    print(OmegaConf.to_yaml(cfg))
     print(cfg)
 
 

@@ -8,7 +8,7 @@ def my_app(cfg: DictConfig) -> None:
     :param cfg:
     :return:
     """
-    print(cfg.pretty())
+    print(OmegaConf.to_yaml(cfg))
     print(cfg)
 
 
